@@ -1,0 +1,53 @@
+//Imports
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+//Dimensions and color
+.intro-section{
+    @include gradient;
+    padding: 10rem 0 0 0;
+    width: 100%;
+    height: 100%;
+}
+
+.intros{
+
+    .video-box{
+        //Position
+        position:relative;
+
+        a{
+            @include absoluteCenter;
+            span{
+                i{
+                    font-size: 6rem;
+                    color: $secondary;
+                }
+            }
+        }
+    }
+}
+
+//Animation for button
+.border-animation{
+    //Dimensions and border
+    position:absolute;
+    width: 6rem;
+    height: 6rem;
+    border: 0.55rem solid $white;
+    border-radius: 50%;
+
+    //Position
+    top: 0;
+    left: 0;
+
+    //Animation call
+    animation: pulse-border 1s linear infinite;
+
+    &--border-1{
+        animation-delay: 1s;
+    }
+    &--border-2{
+        animation-delay: 1.2s;
+    }
+}

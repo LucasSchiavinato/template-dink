@@ -1,0 +1,26 @@
+{
+  "name": "myproject",
+  "version": "1.0.0",
+  "description": "learning bootstrap v5 with sass",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss:assets/css"
+  },
+  "keywords": [
+    "Bootstrap",
+    "bootstrap-v5",
+    "sass",
+    "learning-bootstrap",
+    "learn-sass"
+  ],
+  "author": "Sebastian Schiavinato",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.55.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.2.0",
+    "autoprefixer": "^10.4.12",
+    "bootstrap": "^5.2.2"
+  }
+}

@@ -1,0 +1,27 @@
+//Import
+@use '../custom' as *;
+
+//Gradient Mix
+@mixin gradient{
+    background: linear-gradient(to right, rgba($primary, 0.95), rgba($purple, 0.95));
+}
+
+//Absolute center
+@mixin absoluteCenter{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(40%, -50%);
+}
+@mixin center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+//Transition
+@mixin transitionProperty{
+    transition-duration: 550ms;
+    transition-property: all;
+}

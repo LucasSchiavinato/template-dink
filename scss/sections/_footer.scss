@@ -1,0 +1,101 @@
+//Imports
+@use '../custom' as *;
+@use'../components/mixins' as *;
+@use'../components/animations' as*;
+
+.footer{
+    padding-top: 1rem;
+    background-color: $footer;
+}
+
+//Style the contact-box
+.contact-box{
+    position: relative;
+
+    &__icon{
+        width: 2rem;
+        stroke: $indigo;
+
+        @include media-breakpoint-up(sm){
+            width: 4rem;
+        }
+    }
+    &__info{
+        padding: 0.4rem;
+        font-weight: 600;
+
+        &--title{
+            font-size: 1rem;
+            color: $white;
+            text-decoration: none;
+
+            @include media-breakpoint-up(sm){
+                width: 1.4rem;
+            }
+        }
+        &--subtitle{
+            font-size: 0.8rem;
+            color: $gray-600;
+            text-decoration: none;
+
+            @include media-breakpoint-up(sm){
+                width: 1rem;
+            }
+        }
+    }
+}
+
+//Social media
+.footer-sm{
+    //Colors
+    background-color: $gray-900;
+    color: $white;
+    
+    a{
+        color: $white;
+
+        i{
+            //Dimension
+            font-size: 1.5rem;
+            margin-left: 1rem;
+
+            @include media-breakpoint-up(sm){
+                width: 1.6rem;
+            }
+        }
+    }
+}
+
+//Style btn whatsapp
+// STYLE THE BACK TO TOP BUTTON 
+.btn-whatsapp {
+    //Dimentions
+    position: fixed;
+    width: 3rem;
+    height: 3rem;
+    right: 1.875rem;
+    bottom: 1.875rem;
+    z-index: 9999;
+
+    //Animation
+    animation-name: pulse-btn;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+
+    img{
+        font-size: 2rem;
+    }
+}
+@keyframes pulse-btn{
+    0% {
+        transform: scale(1);
+        border-radius: 100%;
+    }
+    100% {
+        transform: scale(1.5);
+
+    }
+}

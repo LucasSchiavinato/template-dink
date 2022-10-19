@@ -1,0 +1,18 @@
+//Import
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+//Gradient color
+.menu{
+    @include gradient;
+
+    li{
+        padding: 0 0.7rem;
+
+        a{
+            color: $white;
+            text-transform: capitalize;
+            font-weight: 600;
+        }
+    }
+}

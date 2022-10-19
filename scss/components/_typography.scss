@@ -1,0 +1,146 @@
+//Imports
+@use '../custom' as *;
+
+
+
+//INTRO SECTION
+//Position and Dimentions
+.display-2{
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+
+    &--intro{
+        //Position
+        display: inline-block;
+        font-weight: 700;
+        margin-top: 8rem;
+        
+        //Font
+        font-family: 'Bangers', cursive;
+    }
+
+    &--description{
+        font-size: 1.5rem;
+        display: block;
+        margin-top: 1.2rem;
+        text-transform: none;
+    }
+}
+
+//CAMPANIES
+//font
+.type-1{
+    //Font
+    font-family: 'Bangers', cursive;
+}
+
+//Heading line
+.heading-line1::before{
+    //Dimensions
+    content: "";
+    width: 10rem;
+    height: 0.1rem;
+    display: block;
+    //Position
+    margin: 0 auto;
+    //Color
+    background-color: $primary;
+}
+.heading-line1::after{
+    //Dimensions
+    content: "";
+    width: 2rem;
+    padding-top: 0.5rem;
+    height: 0.1rem;
+    display: block;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    //Position
+    margin: 0 auto;
+    //Color
+    background-color: $primary;
+}
+
+//MY SERVICES
+//font
+.type-2{
+    //Font
+    font-family: 'Bangers', cursive;
+}
+
+//Heading line
+.heading-line2::before{
+    //Dimensions
+    content: "";
+    width: 10rem;
+    height: 0.1rem;
+    display: block;
+    //Position
+    margin: 0 auto;
+    //Color
+    background-color: $primary;
+}
+.heading-line2::after{
+    //Dimensions
+    content: "";
+    width: 2rem;
+    padding-top: 0.5rem;
+    height: 0.1rem;
+    display: block;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    //Position
+    margin: 0 auto;
+    //Color
+    background-color: $primary;
+}
+
+//Borders
+//Right
+.border-right{
+    border-right: 0.1rem solid $secondary;
+    height: 100%;
+}
+
+.display-3{
+    //Font
+    font-family: 'Bangers', cursive;
+
+    &--title{
+        //Dimensions
+        font-size: 1.8rem;
+        text-transform: capitalize;
+        font-weight: 600;
+        display: inline-block;
+        background-image: linear-gradient(to right, $primary, $secondary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        //Font
+        font-family: 'Bangers', cursive;
+    }
+}
+
+
+//GET STARTED
+//Title
+.getcontact{
+    //Font
+    font-family: 'Bangers', cursive;
+
+    &--title{
+        //Dimensions
+        font-size: 3.8rem;
+        text-transform: capitalize;
+        font-weight: 600;
+        display: inline-block;
+        background-image: linear-gradient(to right, $primary, $secondary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        //Font
+        font-family: 'Bangers', cursive;
+    }
+}
+//gradient bg
+.gradient{
+    background: linear-gradient(to right, rgba($primary, 0.95), rgba($purple, 0.95));
+}
