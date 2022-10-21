@@ -30,17 +30,13 @@
             text-decoration: none;
 
             @include media-breakpoint-up(sm){
-                width: 1.4rem;
+                width: 1.6rem;
             }
         }
         &--subtitle{
             font-size: 0.8rem;
             color: $gray-600;
             text-decoration: none;
-
-            @include media-breakpoint-up(sm){
-                width: 1rem;
-            }
         }
     }
 }
