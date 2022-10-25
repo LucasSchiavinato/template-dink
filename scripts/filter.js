@@ -11,16 +11,17 @@ const productItem = document.querySelectorAll('.products .product');
         button.classList.add("active");
 
         //Filter
-        const value = button.textContent;
+        const filter = button.textContent.toLowerCase();
+
         productItem.forEach(product => {
             product.style.display = 'none';
+            let dataFilter = product.getAttribute('data-filter').split(" ")
 
-            console.log(product.getAttribute('data-filter'));
-            console.log(value);
-
-            if (product.getAttribute('data-filter') == value.toLowerCase() || value == "All") {
-                product.style.display = 'block';
-            }
+            dataFilter.forEach(palavra => {
+                if(palavra === filter){
+                    product.style.display = 'block';
+                }
+            })
         })
         }
     });
