@@ -435,17 +435,17 @@
             </div>
             <!--Filter buttons-->
             <div class="row mt-5 mb-4 g-3 text-center">
-              <div class="col-md-12">
-                <button class="btn btn-outline-primary" type="button">All</button>
+              <div class="col-md-12 filter">
+                <button class="btn btn-outline-primary active" type="button">All</button>
                 <button class="btn btn-outline-primary" type="button">Business</button>
                 <button class="btn btn-outline-primary" type="button">Design</button>
                 <button class="btn btn-outline-primary" type="button">Marketplace</button>
               </div>
             </div>
             <!--Itens Portfolio-->
-            <div class="row">
+            <div class="row products">
               <!--ImpérioSoft Studios-->
-              <div class="col-lg-4 col-md-6">
+              <div data-filter="business all" class="product col-lg-4 col-md-6">
                 <div class="portfolio-box shadow">
                   <a href="#" target="_blank"><img src="assets/media/images/portfolio/1.PNG" alt="Portfolio picture 1" title="ImpérioSoft Studios" class="img-fluid"></a>
                   <div class="portfolio-info">
@@ -457,7 +457,7 @@
                 </div>
               </div>
               <!--DGDI Design de interiores-->
-              <div class="col-lg-4 col-md-6">
+              <div data-filter="design all" class="product col-lg-4 col-md-6">
                 <div class="portfolio-box shadow">
                   <a href="#" target="_blank"><img src="assets/media/images/portfolio/2.PNG" alt="Portfolio picture 2" title="DGDI Design de interiores" class="img-fluid"></a>
                   <div class="portfolio-info">
@@ -469,7 +469,7 @@
                 </div>
               </div>
               <!--Finum Cédulas-->
-              <div class="col-lg-4 col-md-6">
+              <div data-filter="marketplace all" class="product col-lg-4 col-md-6">
                 <div class="portfolio-box shadow">
                   <a href="#" target="_blank"><img src="assets/media/images/portfolio/3.PNG" alt="Portfolio picture 3" title="Finum Cédulas" class="img-fluid"></a>
                   <div class="portfolio-info">
@@ -670,6 +670,8 @@
     </script>
     <!--Font Awesome-->
     <script src="https://kit.fontawesome.com/4d9f2244f6.js" crossorigin="anonymous"></script>
+    <!--Filter link-->
+    <script src="scripts/filter.js"></script>
 
 </body>
 </html>
