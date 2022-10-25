@@ -1,21 +1,25 @@
 //Const
 const buttonItem = document.querySelectorAll('.filter button');
-const imgItem = document.querySelectorAll('.product a img');
+const productItem = document.querySelectorAll('.products .product');
 
     buttonItem.forEach(button => {
         button.onclick = function() {
         //active
         buttonItem.forEach(button => {
-            button.className = "";
+            button.classList.remove("active");
         })
-        button.className = "active";
+        button.classList.add("active");
 
         //Filter
         const value = button.textContent;
-        imgItem.forEach(img => {
-            img.style.display = 'none';
-            if (img.getAttribute('data-filter') == value.toLowerCase() || value == "All Menu") {
-                img.style.display = 'block';
+        productItem.forEach(product => {
+            product.style.display = 'none';
+
+            console.log(product.getAttribute('data-filter'));
+            console.log(value);
+
+            if (product.getAttribute('data-filter') == value.toLowerCase() || value == "All") {
+                product.style.display = 'block';
             }
         })
         }
