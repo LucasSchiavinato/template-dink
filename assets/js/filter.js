@@ -1,3 +1,8 @@
+/*
+================================================================
+                Script for filter portfolio itens
+================================================================
+*/
 //Const
 const buttonItem = document.querySelectorAll('.filter button');
 const productItem = document.querySelectorAll('.products .product');
